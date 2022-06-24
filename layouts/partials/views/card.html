@@ -44,7 +44,7 @@
     {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
     {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
     {{ with $resource }}
-    {{ $image := .Fill (printf "1200x900 webp %s" $anchor) }}
+    {{ $image := .Fill "1200x1000" }}
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
             class="featured-image" alt="{{ $item.Title }}" loading="lazy">

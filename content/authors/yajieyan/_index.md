@@ -46,6 +46,9 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/yajie-yan-6ba00930/
+  - icon: envelope
+    icon_pack: fas
+    link: yajieyan@wustl.edu
   # - icon: github
   #   icon_pack: fab
   #   link: https://github.com/gcushen
@@ -58,12 +61,12 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'yajieyan@wustl.edu'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-I obtained my PhD degree from Washington Univeristy in St Louis, under the supervision of Prof. [Tao Ju](https://www.cse.wustl.edu/~taoju/). Topic of my PhD thesis is on robust computation of medial axis. My research interests include geometry processing, rendering, and 3d geometric deep learning.
+I obtained my PhD degree from Washington University in St Louis, under the supervision of Prof. [Tao Ju](https://www.cse.wustl.edu/~taoju/). My PhD thesis is on robust computation of medial axis. I'm also interested in 3d geometric deep learning and rendering. 
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->

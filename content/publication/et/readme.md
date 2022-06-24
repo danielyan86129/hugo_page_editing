@@ -36,14 +36,20 @@ image = ""
 caption = ""
 
 +++
-## Pipeline
+## Workflow
 ************************
-{{<figure alt="fig-pipeline" src="/img/et-pipeline.png" title="Figure 1. Pipeline for generating a hybrid skeleton (with surfaces & curves) from the given medial axis.">}}
 
-Given the medial axis mesh (`.ply`) and the radius field defined on it (`.r`), we can use our GUI program to generate a hybrid skeleton (`.ply`), with surfaces (triangular faces) and curves (polygonal lines) controlled by thresholding the $ET_2$ and $ET_1$ measures separately.
+ET GUI program contains three tabs: `file`, `visualization`, and `skeletonization`. A general work flow starts from importing input files, computes ET, MC, and skeletons under `skeletonization`, and interactive visualization through controls in both visualization and skeleton tabs.
 
 
-## Preparing input
-************************
-One way to obtain medial axis and radius files for a triangular surface mesh is using our [VoxelCore]({{<ref "publication/voxelcore/overview/index.md">}}) method.
+0. **Preparing input**: One way to obtain medial axis and radius files for a triangular surface mesh is using our [VoxelCore]({{<ref "publication/voxelcore/overview/index.md">}}) method
 
+
+1. **Import input files**: The medial axis mesh file (`.ply`) and the `.r` file that defines distance to the shape surface are required. A shape mesh (`.obj`) can be optionally provided for visualization purpose. Click button `load` to load and render the meshes, which enables the visualization sections for surface and MA (highlighted in orange). In this example, MA and R were computed by VoxelCore for the shape of bunny. VoxelCore also generates a voxelized shape which is used here for surface visualization. 
+{{<figure alt="input_MA_and_R" src="/img/et-MA-R.png" title="Providing input files to ET program. MA colored by radius field is visualized.">}}
+
+2. **Computing skeletons**: Next, go to `Skeletonization` and click `precompute` to computes all the measures used for generation of skeletons. Once finished, sliders are enabled to set thresholds for $ET_M$ and $ET_C$ to keep a subset of surfaces and curves above the thresholds. Click `create` to visualize the subsets. Finally, create `export` to write the resulting skeleton to a `.skel` file. In the figure two sample skeletons are shown with their thresholding values shown in the UI.
+{{<figure alt="sample_skels" src="/img/et-sample-skels.png" title="Two sample skeletons and their corresponding thresholds.">}}
+
+1. **Measures visualization**: All measures have been computed at this point, and can be rendered using controls in `Visualization`. Below we show two example measures, i.e. $ET_M$ and $ET_C$ on MA and MC respectively. These can be changed in the dropdown list of MA and MC visualizaion sections.
+{{<figure alt="sample_measures" src="/img/et-sample-measures.png" title="MA and MC are colored by $ET_M$ and $ET_C$ respectively.">}}

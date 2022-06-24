@@ -51,6 +51,7 @@ The output of this project, i.e. Voxel cores can be futher simplified using [Ero
 
 - Paper: {{%staticref "vc_sig18/voxelma.pdf"%}} `pdf (author version)` {{%/staticref%}}
 - Supplementary: {{%staticref "vc_sig18/voxelma_sup.pdf"%}} `pdf` {{%/staticref%}}
+- {{%staticref "ma_data/bunny_from_voxelcore.zip"%}} `Data` {{%/staticref%}}
 - Tool: {{%staticref "vc_sig18/voxelcore.zip"%}} `exe` {{%/staticref%}}, [`readme`]({{<relref "readme.md">}})
 
 We provide the executable which implements the method. Please see the [`readme`]({{<relref "readme.md">}}) for details about using the tool.

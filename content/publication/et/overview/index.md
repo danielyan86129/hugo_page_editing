@@ -44,9 +44,11 @@ While playing a fundamental role in shape understanding, the medial axis is know
 
 + Paper: [`author version`](#)
 + Supplementary: 
-    - {{%staticref "et_sig16/et_sup.pdf"%}} `proof` {{%/staticref%}},
+    - {{%staticref "et_sig16/et_sup.pdf"%}} `proof` {{%/staticref%}}
     - [`gallery(html)`]({{<ref "et_gallery.md">}})
-+ Example meshes: {{%staticref "et_sig16/data.zip"%}} `data` {{%/staticref%}}
++ Example meshes: 
+    - {{%staticref "ma_data/bunny_from_voxelcore.zip"%}} `MA from voxelcore` {{%/staticref%}}
+    - {{%staticref "ma_data/hand_from_scaleaxis.zip"%}} `MA from scaleaxis` {{%/staticref%}}
 + Tool:
 {{%staticref "et_sig16/et.v2.zip"%}} `exe` {{%/staticref%}},
 [`readme`]({{<relref "readme.md">}})
