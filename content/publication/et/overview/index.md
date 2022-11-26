@@ -40,8 +40,9 @@ While playing a fundamental role in shape understanding, the medial axis is know
 
 {{<figure alt="" src="/et_sig16/gallery.png" title="Figure 2. Gallery of 12 shapes organized by columns. The surface, ET, curve-only skeleton and hybrid skeleton are shown for each shape by rows. See the supplementary material for complete results.">}}
 
-### Downloads
+### Code & Downloads
 
++ Code: [`Git repo`](https://github.com/danielyan86129/ET)
 + Paper: [`author version`](#)
 + Supplementary: 
     - {{%staticref "et_sig16/et_sup.pdf"%}} `proof` {{%/staticref%}}

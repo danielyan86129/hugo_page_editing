@@ -48,8 +48,9 @@ The input 3D shape to our algorithm can be a voxel representation (binarized vol
 
 The output of this project, i.e. Voxel cores can be futher simplified using [Erosion Thickness]({{<relref "publication/et/overview/index.md">}}). The output will be a skeleton featuring both curves and surfaces that capture tubular and planar regions of the shape.
 
-## Downloads
+## Code & Downloads
 
+- [`Git repo`](https://github.com/danielyan86129/voxel_ma)
 - Paper: {{%staticref "vc_sig18/voxelma.pdf"%}} `pdf (author version)` {{%/staticref%}}
 - Supplementary: {{%staticref "vc_sig18/voxelma_sup.pdf"%}} `pdf` {{%/staticref%}}
 - {{%staticref "ma_data/bunny_from_voxelcore.zip"%}} `Data` {{%/staticref%}}

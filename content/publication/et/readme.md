@@ -36,7 +36,7 @@ image = ""
 caption = ""
 
 +++
-## Workflow
+## GUI Workflow
 ************************
 
 ET GUI program contains three tabs: `file`, `visualization`, and `skeletonization`. A general work flow starts from importing input files, computes ET, MC, and skeletons under `skeletonization`, and interactive visualization through controls in both visualization and skeleton tabs.
@@ -53,3 +53,22 @@ ET GUI program contains three tabs: `file`, `visualization`, and `skeletonizatio
 
 1. **Measures visualization**: All measures have been computed at this point, and can be rendered using controls in `Visualization`. Below we show two example measures, i.e. $ET_M$ and $ET_C$ on MA and MC respectively. These can be changed in the dropdown list of MA and MC visualizaion sections.
 {{<figure alt="sample_measures" src="/img/et-sample-measures.png" title="MA and MC are colored by $ET_M$ and $ET_C$ respectively.">}}
+
+
+## Command-line Arguments
+************************
+Command line mode is enabled by setting `--nogui` when calling the exe from terminal. Arguments can be printed by feeding `--help` to the exe, or more details can be found in the `main.cpp` file.
+
+- `--nogui`, default: `false`, "use cmd line instead? OPTIONAL." 
+- `--shape_file`, default: `""`, "the file for the 3d shape boundary. OPTIONAL." 
+- `--ma_file`, default: `""`, "the file for the medial axis. REQUIRED." 
+- `--r_file`, default: `""`, "the file for the radius function over medial axis. OPTIONAL." 
+- `export_skel`, default: `false`, "compute all the way to curve skeleton generation & output skel files." 
+
+- `runall`, default: `false`, "compute all the way to skeleton generation." 
+- `--omega`, default: `0.01`, "the sampling rate for steiner subdivision. OPTIONAL." 
+- `--burn_sch`, default: `1`, "the burning scheme (0: orig-and-steiner, 1: steiner-only(default value)). OPTIONAL."
+- `mc_msure`, default: `"null"`, "output specified measure on medial curves. nothing to output by default. valid value: {shape-diam, shape-width, ...}. OPTIONAL." 
+- `theta_2`, default: `1.1`, "skeleton threshold for face pruning. Assume unit bounding box. All faces purged when > 1. OPTIONAL." 
+- `theta_1`, default: `0.05`, "skeleton threshold for curve pruning. Assume unit bounding box. All curves purged when > 1. OPTIONAL." 
+- `smooth_i`, default: `0`, "# smooth iterations for skel curves. OPTIONAL."
