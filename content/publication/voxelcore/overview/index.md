@@ -11,7 +11,7 @@ publication: "ACM Transactions on Graphics (Proc. SIGGRAPH 2018)"
 publication_short: ""
 tags:
   - medial-axis
-summary: ""
+summary: "Medial Axes of voxel shapes with provably good geometry and guaranteed topology properties"
 external_link: ""
 math: true
 highlight: true
@@ -26,6 +26,7 @@ image:
 header:
   image: ""
   caption: ""
+
 ---
 
 {{<figure alt="flowchart of algorithm" src="/img/vc-flowchart.png" title="Figure 1. Breakdown of algorithm. Given a triangular mesh, we first convert it into a voxel shape, then extract the voxel core which is colored by the lambda measure, and finally output a pruned voxel core. The voxelization step is omitted if the input is already a voxel shape.">}}
