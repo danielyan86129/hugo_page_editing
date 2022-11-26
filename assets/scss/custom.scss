@@ -1,0 +1,5 @@
+pre code {
+    // enable wrapping of multi-line (e.g. code block) while preserving newlines
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
